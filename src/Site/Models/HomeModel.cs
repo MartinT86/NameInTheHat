@@ -1,4 +1,4 @@
-namespace CoreSite.Models
+namespace Site.Models
 {
     public class HomeModel
     {

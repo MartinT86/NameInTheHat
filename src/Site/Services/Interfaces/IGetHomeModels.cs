@@ -1,6 +1,6 @@
-using CoreSite.Models;
+using Site.Models;
 
-namespace CoreSite.Services
+namespace Site.Services
 {
     public interface IGetHomeModels
     {

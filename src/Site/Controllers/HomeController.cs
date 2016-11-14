@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using CoreSite.Services;
+using Site.Services;
 
-namespace CoreSite.Controllers
+namespace Site.Controllers
 {
     public class HomeController : Controller
     {

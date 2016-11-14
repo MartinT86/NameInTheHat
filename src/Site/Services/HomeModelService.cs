@@ -1,7 +1,7 @@
 using System;
-using CoreSite.Models;
+using Site.Models;
 
-namespace CoreSite.Services
+namespace Site.Services
 {
     public class HomeModelService : IGetHomeModels
     {
