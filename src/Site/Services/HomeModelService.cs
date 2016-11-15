@@ -9,7 +9,6 @@ namespace Site.Services
         {
             return new HomeModel()
             {
-                ID = 123,
                 Title = "Tester from service"
             };
         }

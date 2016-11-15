@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Site.Models;
 using Site.Services;
 
 namespace Site.Controllers
@@ -16,6 +17,13 @@ namespace Site.Controllers
         {
             var model = _homeModelService.GetHomeModel();
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(HomeModel model)
+        {
+            var test = model;
+            return RedirectToAction("Index");
         }
 
         public string Welcome()

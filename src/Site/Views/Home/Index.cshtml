@@ -1,12 +1,11 @@
+@using Microsoft.AspNetCore.Mvc
+
 @model Site.Models.HomeModel
 
 <h1>Pick a name from the hat</h1>
 
 <p>Hello from our View Template!</p>
 
-<h2>ID</h2>
-<p>@Model.ID</p>
-
-<h2>Title</h2>
-<p>@Model.Title</p>
-
+<form asp-controller="Home" asp-action="Index" method="post">
+    <!-- Input and Submit elements -->
+</form>

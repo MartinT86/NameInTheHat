@@ -1,8 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Site.Models
 {
     public class HomeModel
     {
-        public int ID { get; set; }
+        [Required]
         public string Title { get; set; }
     }
 }

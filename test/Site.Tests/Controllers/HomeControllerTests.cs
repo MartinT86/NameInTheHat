@@ -15,13 +15,10 @@ namespace Site.Tests.Controllers
         {
             var model = new HomeModel()
             {
-                ID = 123,
                 Title = "Tester from service"
             };
             var mockService = new Mock<IGetHomeModels>();
             mockService.Setup(service => service.GetHomeModel()).Returns(model);
-
-            
 
             var expectedViewName = "Index";
             var controller = new HomeController(mockService.Object);;
