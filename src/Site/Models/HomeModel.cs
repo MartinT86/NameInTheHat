@@ -6,5 +6,6 @@ namespace Site.Models
     {
         [Required]
         public string Title { get; set; }
+        public string SelectedName {get;set;}
     }
 }

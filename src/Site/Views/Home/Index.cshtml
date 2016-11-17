@@ -6,6 +6,10 @@
 
 <p>Hello from our View Template!</p>
 
-<form asp-controller="Home" asp-action="Index" method="post">
+<form asp-controller="Home" asp-action="Index" method="post" id="usrform">
     <!-- Input and Submit elements -->
+    <input asp-for="@Model.Title" />
+    <button type="submit">Get name</button>
 </form>
+<textarea rows="4" cols="50" name="SelectedName" form="usrform">
+Enter text here...</textarea>
