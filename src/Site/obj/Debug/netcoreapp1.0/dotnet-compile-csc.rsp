@@ -164,5 +164,6 @@
 "/home/martin/Projects/nameinthehat/src/Site/Services/HomeModelService.cs"
 "/home/martin/Projects/nameinthehat/src/Site/Services/Interfaces/IGetHomeModels.cs"
 "/home/martin/Projects/nameinthehat/src/Site/Controllers/HomeController.cs"
+"/home/martin/Projects/nameinthehat/src/Site/Controllers/WinnerController.cs"
 "/home/martin/Projects/nameinthehat/src/Site/Controllers/HelloWorld.cs"
 "/home/martin/Projects/nameinthehat/src/Site/Models/HomeModel.cs"
