@@ -10,7 +10,6 @@ namespace aspnetcoreapp
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IGetHomeModels, HomeModelService>();
             services.AddTransient<IGetRandomNumber, RandomNumberService>();
             services.AddTransient<IGetWinningNameService, WinningNameService>();
 

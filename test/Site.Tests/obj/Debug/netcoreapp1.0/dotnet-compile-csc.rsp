@@ -188,4 +188,4 @@
 -r:"/home/martin/Projects/nameinthehat/src/Site/bin/Debug/netcoreapp1.0/Site.dll"
 "/home/martin/Projects/nameinthehat/test/Site.Tests/Tests.cs"
 "/home/martin/Projects/nameinthehat/test/Site.Tests/Services/WinningNameServiceTests.cs"
-"/home/martin/Projects/nameinthehat/test/Site.Tests/Controllers/HomeControllerTests.cs"
+"/home/martin/Projects/nameinthehat/test/Site.Tests/Controllers/WinnerControllerTests.cs"

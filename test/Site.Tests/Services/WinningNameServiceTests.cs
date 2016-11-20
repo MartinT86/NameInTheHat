@@ -16,11 +16,12 @@ namespace Site.Tests.Services
             var mockRandomService = new Mock<IGetRandomNumber>();
             var names = new List<string>(){expectedName, "another name"};
 
-            mockRandomService.Setup(service => service.Get(names.Count)).Returns(names.Count);
+            mockRandomService.Setup(service => service.Get(names.Count)).Returns(0);
 
             var winningNameService = new WinningNameService(mockRandomService.Object);
 
             var namesList = string.Join(Environment.NewLine, names);
+
         //When
             var winningName = winningNameService.GetWinningName(namesList);        
         //Then
