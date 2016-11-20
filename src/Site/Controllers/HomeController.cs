@@ -7,10 +7,12 @@ namespace Site.Controllers
     public class HomeController : Controller
     {
         private readonly IGetHomeModels _homeModelService;
+        private readonly IGetWinningNameService _winningNameService;
 
-        public HomeController (IGetHomeModels homeModelService)
+        public HomeController (IGetHomeModels homeModelService, IGetWinningNameService winningNameService)
         {
-            _homeModelService = homeModelService;        
+            _homeModelService = homeModelService;    
+            _winningNameService = winningNameService;    
         }
 
         public IActionResult Index()
@@ -24,11 +26,6 @@ namespace Site.Controllers
         {
             var test = model;
             return RedirectToAction("Index");
-        }
-
-        public string Welcome()
-        {
-            return "This is the home Welcome action method...";
         }
     }
 }

@@ -20,8 +20,10 @@ namespace Site.Tests.Controllers
             var mockService = new Mock<IGetHomeModels>();
             mockService.Setup(service => service.GetHomeModel()).Returns(model);
 
+            var mockWinningNameService = new Mock<IGetWinningNameService>();
+
             var expectedViewName = "Index";
-            var controller = new HomeController(mockService.Object);;
+            var controller = new HomeController(mockService.Object, mockWinningNameService.Object);
 
             var result = controller.Index() as ViewResult;
             Assert.NotNull(result);

@@ -190,4 +190,5 @@
 --reference:/home/martin/.nuget/packages/xunit.runner.utility/2.1.0/lib/dotnet/xunit.runner.utility.dotnet.dll
 --reference:/home/martin/Projects/nameinthehat/src/Site/bin/Debug/netcoreapp1.0/Site.dll
 /home/martin/Projects/nameinthehat/test/Site.Tests/Tests.cs
+/home/martin/Projects/nameinthehat/test/Site.Tests/Services/WinningNameServiceTests.cs
 /home/martin/Projects/nameinthehat/test/Site.Tests/Controllers/HomeControllerTests.cs
