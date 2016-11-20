@@ -1,12 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
+using Site.Models;
 
 namespace Site.Controllers
 {
     public class WinnerController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string name)
         {
-            return View();
+            if(string.IsNullOrEmpty(name))
+                return View("Missing");
+
+            var winnerModel = new WinningNameModel(name);
+            return View(winnerModel);
         }
     }
 }

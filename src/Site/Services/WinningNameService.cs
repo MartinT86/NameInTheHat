@@ -16,9 +16,9 @@ namespace Site.Services
         {
             string[] stringSeparators = new string[] {Environment.NewLine};
             var namesArray = namesList.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
-            var nameToTake = namesArray[_privateNumber.Get(namesArray.Length - 1)];
+            var nameToTake = namesArray[_privateNumber.Get(namesArray.Length)];
 
-            return new WinningNameModel(nameToTake);
+            return new WinningNameModel(nameToTake.Trim());
         }
     }
 }

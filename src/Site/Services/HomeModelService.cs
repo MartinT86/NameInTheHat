@@ -7,10 +7,7 @@ namespace Site.Services
     {
         public HomeModel GetHomeModel()
         {
-            return new HomeModel()
-            {
-                Title = "Tester from service"
-            };
+            return new HomeModel();
         }
     }
 }

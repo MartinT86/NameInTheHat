@@ -6,26 +6,24 @@ namespace Site.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IGetHomeModels _homeModelService;
         private readonly IGetWinningNameService _winningNameService;
 
-        public HomeController (IGetHomeModels homeModelService, IGetWinningNameService winningNameService)
+        public HomeController (IGetWinningNameService winningNameService)
         {
-            _homeModelService = homeModelService;    
             _winningNameService = winningNameService;    
         }
 
         public IActionResult Index()
         {
-            var model = _homeModelService.GetHomeModel();
-            return View(model);
+            return View();
         }
 
         [HttpPost]
         public IActionResult Index(HomeModel model)
         {
             var test = model;
-            return RedirectToAction("Index");
+            var winningName = _winningNameService.GetWinningName(model.EnteredNames);
+            return RedirectToAction("Index", "Winner", new { name = winningName.Name });
         }
     }
 }
