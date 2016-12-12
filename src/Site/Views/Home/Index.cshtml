@@ -1,14 +1,11 @@
-@using Microsoft.AspNetCore.Mvc
-
-@model Site.Models.HomeModel
-
-<h1>Pick a name from the hat</h1>
-
-<p>Hello from our View Template!</p>
+@using Microsoft.AspNetCore.Mvc @model Site.Models.HomeModel
 
 <form asp-controller="Home" asp-action="Index" method="post" id="usrform">
     <!-- Input and Submit elements -->
-    <button type="submit">Get name</button>
+    <div>
+        <textarea rows="4" cols="50" name="EnteredNames" form="usrform">Enter your names here...</textarea>
+    </div>
+    <div>
+        <button type="submit">Pick a winner</button>
+    </div>
 </form>
-<textarea rows="4" cols="50" name="EnteredNames" form="usrform">
-Enter text here...</textarea>
