@@ -21,6 +21,9 @@ namespace aspnetcoreapp
             loggerFactory.AddConsole(LogLevel.Error);
 
             app.UseStaticFiles();
+            
+            app.UseExceptionHandler("/error");
+            app.UseStatusCodePagesWithRedirects("/error/");
 
             app.UseMvc(routes =>
             {

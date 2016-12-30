@@ -9,7 +9,17 @@ body {
 .pick {
   border: none;
 }
+.pick h2 {
+  margin: 20px;
+}
 .text {
   color: #d85300;
   font-family: "Arial Black", Gadget, sans-serif;
+}
+.fakebutton {
+  display: inline-block;
+  margin-top: 20px;
+}
+.fakebutton h2 {
+  margin: 20px;
 }

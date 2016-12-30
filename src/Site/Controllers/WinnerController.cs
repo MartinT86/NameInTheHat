@@ -6,7 +6,7 @@ namespace Site.Controllers
     public class WinnerController : Controller
     {
         public IActionResult Index(string name)
-        {
+        {         
             if(string.IsNullOrEmpty(name))
                 return View("Missing");
 
