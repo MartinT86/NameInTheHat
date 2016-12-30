@@ -21,8 +21,6 @@ paths.minCss = paths.webroot + "css/custom/**/*.min.css";
 paths.concatJsDest = paths.webroot + "js/site.min.js";
 paths.concatCssDest = paths.webroot + "css/site.min.css";
 
-console.log('test', paths.css);
-
 gulp.task("clean:js", function (cb) {
   rimraf(paths.concatJsDest, cb);
 });
@@ -66,3 +64,7 @@ gulp.task("min:css", ["less"], function () {
 gulp.task("test", ["min:css"]);
 
 gulp.task("min", ["less", "min:js", "min:css"]);
+
+gulp.task('watch', ['min'], function () {
+   gulp.watch(paths.webroot + "css/custom/**/*.less", ['min']);
+});

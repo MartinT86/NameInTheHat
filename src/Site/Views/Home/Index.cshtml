@@ -3,9 +3,10 @@
 <form asp-controller="Home" asp-action="Index" method="post" id="usrform">
     <!-- Input and Submit elements -->
     <div>
-        <textarea rows="4" cols="50" name="EnteredNames" form="usrform">Enter your names here...</textarea>
+        <textarea class="name-area" rows="4" cols="50" 
+        name="EnteredNames" form="usrform" placeholder="Enter your names here...&#13;&#10;One name on each line..."></textarea>
     </div>
     <div>
-        <button type="submit">Pick a winner</button>
+        <button class="dark pick name" type="submit">Pick a winner</button>
     </div>
 </form>
