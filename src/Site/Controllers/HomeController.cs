@@ -21,7 +21,9 @@ namespace Site.Controllers
         [HttpPost]
         public IActionResult Index(HomeModel model)
         {
-            var test = model;
+            if(model.EnteredNames == null)
+                return RedirectToAction("Index", "Home");
+
             var winningName = _winningNameService.GetWinningName(model.EnteredNames);
             return RedirectToAction("Index", "Winner", new { name = winningName.Name });
         }
